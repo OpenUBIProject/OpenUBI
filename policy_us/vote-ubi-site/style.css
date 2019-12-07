@@ -1,0 +1,107 @@
+/* UBI Sheet */
+:root { /* Yang2020.com Pallate */
+    --black:  hsl(0, 0%, 0%);
+    --blueDark:  hsl(225, 72%, 28%);
+    --blueDarkTransparent:  hsla(225, 72%, 28%, 0.67);
+    --blueLight:  hsl(205, 70%, 58%);
+    --blueLightest:  hsla(213, 100%, 95%, 0.8);
+    --blueTransparent:  hsla(212, 100%, 35%, 0.9);
+    --blueTransparentLight:  hsla(213, 100%, 95%, 0.44);
+    --grayDarker:  hsl(0, 0%, 29%);
+    --grayDark:  hsl(0, 0%, 61%);
+    --grayLight:  hsl(0, 0%, 61%, 0.1);
+    --grayLighter:  hsla(0, 0%, 85%, 0.2);
+    --red:  hsl(352, 69%, 53%);
+    --redDark:  hsl(352, 69%, 39%);
+    --white:  hsl(0, 0%, 100%);
+    --grayGradient1: hsla(0,0%,53%,.7);
+    --grayGradient2: hsla(0,0%,77%,.4);
+    --grayLoading: #d9d9d9;
+    --grayMedium: #c3c1c1;
+    --whiteDark: #f5f5f5;
+}
+
+body {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  /* background-color: var(--redDark); */
+  /* background-image: url("https://www.yang2020.com/wp-content/uploads/splash_index.png"); */
+  /* background-size: 100% auto; */
+  /* background-repeat: no-repeat; */
+  /* font-size: 1.0rem; */
+  /* margin:0; */
+  /* padding:0; */
+  /* height:100%; */
+}
+
+a:link {
+  color: --white; 
+}
+
+a:link, a:visited {
+  /* color: #CCC; */
+}
+
+a.tags {
+  /* background-color: var(--white); */
+  padding: 10px;
+  line-height: 5.0rem;
+}
+
+h1.title {
+  text-align: center;
+  color: var(--white);
+}
+
+h2 {
+  text-align: center;
+  background-color: var(--blueLight);
+  color: var(--white);  
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+.box {
+  border-top: 19px solid var(--blueLight);
+  background-color: var(--blueDark);
+  padding: 20px 42px 31px; 
+  margin: 10px;
+  color: var(--white);
+}
+
+.tags {
+  text-align: center;
+  font-size: 2.0rem;
+}
+
+img.platform {
+  max-height: 24px;
+}
+
+.thanks {
+  text-align: center;
+  background-color: var(--red);
+  padding: 10px;
+  color: var(--white);
+}
+
+table {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 0px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
