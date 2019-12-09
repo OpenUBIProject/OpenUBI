@@ -37,7 +37,7 @@ def myOut(list):
   else:
     print("<p><table><tr><td width='150px'><b>" + list['DIST'] + "</td><td></td><tr>")
     print("<tr><td width='260px'>Candidate</td><td>" + str(list["Candidate"]) + " (" + list["Hack's Party"] + ")</td></tr>")
-    print("<tr><td width='260px'>Twitter Username</td><td><a href='https://twitter.com/" + str(list["Twitter"]) + " target='_blank'>" + str(list["Twitter"]) + "</a></td></tr>")
+    print("<tr><td width='260px'>Twitter Username</td><td><a href='https://twitter.com/" + str(list["Twitter"]) + "' target='_blank'>" + str(list["Twitter"]) + "</a></td></tr>")
 
     val = "<img src='https://github.com/joezippy/OpenUBI/blob/master/project-images/question-mark.png?raw=true' alt='N/A'>"
     if str(list["UBI"]) == "1":
