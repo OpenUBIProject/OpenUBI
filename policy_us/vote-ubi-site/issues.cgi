@@ -35,8 +35,8 @@ def myOut(list):
     print ("Content-Type: application/javascript\n\n")
     print(str(list))
   else:
-    print("<p><table><tr><td width='150px'><b>" + list['DIST'] + "</td><td></td><tr>")
-    print("<tr><td width='260px'>Candidate</td><td>" + str(list["Candidate"]) + " (" + list["Hack's Party"] + ")</td></tr>")
+    print("<p><table><tr><td width='150px'><b>" + list['Best DIST'] + "</td><td></td><tr>")
+    print("<tr><td width='260px'>Candidate</td><td>" + str(list["Best Name"]) + " (" + list["Best Party"] + ")</td></tr>")
     print("<tr><td width='260px'>Twitter Username</td><td><a href='https://twitter.com/" + str(list["Twitter"]) + "' target='_blank'>" + str(list["Twitter"]) + "</a></td></tr>")
 
     val = "<img src='https://github.com/joezippy/OpenUBI/blob/master/project-images/question-mark.png?raw=true' alt='N/A'>"
@@ -87,11 +87,11 @@ def findall(v, k):
   for i in range(len(v)):
     if (k == "President"):
       myOut(v[i])
-    elif (len(v[i]['DIST']) >= 2 and len(k) >=2):
-      if v[i]['DIST'][:2] == k[:2]:
+    elif (len(v[i]['Best DIST']) >= 2 and len(k) >=2):
+      if v[i]['Best DIST'][:2] == k[:2]:
         myOut(v[i])
     else:
-      if v[i]['DIST'] == k:
+      if v[i]['Best DIST'] == k:
         myOut(v[i])
 
 filename = './president.json'
