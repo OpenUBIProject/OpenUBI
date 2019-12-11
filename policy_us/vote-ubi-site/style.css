@@ -34,7 +34,7 @@ body {
 }
 
 a:link {
-  color: --white; 
+  color: --white;
 }
 
 a:link, a:visited {
@@ -47,6 +47,7 @@ a.tags {
   line-height: 5.0rem;
 }
 
+/*
 h1.title {
   text-align: center;
   color: var(--white);
@@ -55,9 +56,8 @@ h1.title {
 h2 {
   text-align: center;
   background-color: var(--blueLight);
-  color: var(--white);  
+  color: var(--white);
 }
-
 h3 {
   font-size: 1.5rem;
 }
@@ -65,11 +65,80 @@ h3 {
 blockquote {
   font-style: italic;
 }
+*/
+
+/* Logo and Member Pledge */
+#member-pledge {
+  margin: 0.1em;
+  padding-top: 0.7em;
+}
+
+.pledge-text {
+  font-weight: none;
+  font-size: 0.8em;
+}
+
+.hashtag {
+  color: var(--grayDark)
+}
+
+.example-signature {
+  padding-right: 2em;
+}
+
+/* Candidate Lookup */
+.candidate-lookup {
+  margin-bottom: 1em;
+}
+
+.candidate-lookup > .card-body {
+  border: 1px solid var(--blueDark);
+  border-radius: 0 0 0.2em 0.2em;
+}
+
+.card-header {
+  color: white;
+  background-color: var(--blueDark);
+  border-radius: 1em;
+}
+
+.btn-primary {
+  background-color: var(--blueDark);
+}
+
+.state-select {
+  max-width: 25em;
+  margin-right: 0.6em;
+}
+
+/* FAQ */
+
+.faq {
+  margin-bottom: 2em;
+  border-bottom: 1px solid var(--blueDark);
+  border-left: 1px solid var(--blueDark);
+  border-right: 1px solid var(--blueDark);
+  border-radius: 0 0 0.2em 0.2em;
+}
+
+.card-body {
+  background-color: var(--grayLighter);
+}
+
+#federal-candidate {
+  border-bottom: 1px solid grey;
+}
+
+#communication {
+  border-bottom: 1px solid grey;
+}
+
+/* Other */
 
 .box {
   border-top: 19px solid var(--blueLight);
   background-color: var(--blueDark);
-  padding: 20px 42px 31px; 
+  padding: 20px 42px 31px;
   margin: 10px;
   color: var(--white);
 }
