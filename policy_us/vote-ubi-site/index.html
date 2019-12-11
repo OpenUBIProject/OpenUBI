@@ -6,102 +6,151 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="tags">
-    <small><a href="http://us.openubiproject.org/index.html" target="_blank"><img src="https://github.com/joezippy/OpenUBI/raw/master/project-images/open-ubi-project-logo-us.png?raw=true" alt="UBIcaucus" ></a><br>
-    <a href="http://vote.us.openubiproject.org" target="_blank">Vote UBI Site!</a></small><br>
+    <div class="container">
+    <nav class="navbar"></nav>
+    <div class="jumbotron p-3">
+    <div class="row">
+    <div class="tags col-md-3">
+    <a href="http://us.openubiproject.org/index.html" target="_blank"><img src="./static/assets/open-ubi-project-logo-us.png" alt="UBIcaucus" ></a><br>
+        <!-- <a href="http://vote.us.openubiproject.org" target="_blank">Vote UBI Site!</a></small><br> -->
+    </div>
+    <div id="member-pledge" class="col">
+        <h5><b>Member Pledge:</b></h5>
+        <p class="pledge-text">If elected, I pledge to introduce legislation that can be passed by the House, Senate and signed into law by the President in the first quarter of 2021 that transparently funds and guarantees a Universal Basic Income (UBI) for the citizens of the United States of America, at a rate which covers basic human needs in an effort to eliminate poverty, while building a robust national economy.</p>
+        <div class="row">
+            <div class="col">
+            <p class="hashtag">#UBIcaucus</p>
+            </div>
+            <div class="example-signature mr-auto">
+            <img src="./static/assets/UBI-caucus-member.png"></img>
+            </col>
+        </div>
+    </div>
+    </div>
+    </div>
     </div>
 
-    <div class="box">
-     <a href="https://github.com/joezippy/OpenUBI/raw/master//policy_us/Member-Pledge-Marked.png?raw=true" target="_blank"><img src="https://github.com/joezippy/OpenUBI/raw/master//policy_us/Member-Pledge-Marked.png?raw=true" alt="#UBIcaucus pledge"></a>
-    </div>
-    
-    <div class="box">
-
-    <h3>Find candidate UBI positions by state:</h3>
-    <blockquote>
-      <form action="./issues.cgi" method="get">
-        <select name="dist_key">
-<option value=AK selected="selected">AK</option>
-<option value=AK>AK</option>
-<option value=AR>AR</option>
-<option value=AZ>AZ</option>
-<option value=CA>CA</option>
-<option value=CO>CO</option>
-<option value=DE>DE</option>
-<option value=FL>FL</option>
-<option value=GA>GA</option>
-<option value=HI>HI</option>
-<option value=IA>IA</option>
-<option value=ID>ID</option>
-<option value=IL>IL</option>
-<option value=IN>IN</option>
-<option value=KS>KS</option>
-<option value=KY>KY</option>
-<option value=LA>LA</option>
-<option value=MA>MA</option>
-<option value=MD>MD</option>
-<option value=ME>ME</option>
-<option value=MI>MI</option>
-<option value=MN>MN</option>
-<option value=MO>MO</option>
-<option value=MS>MS</option>
-<option value=MT>MT</option>
-<option value=NC>NC</option>
-<option value=NE>NE</option>
-<option value=NJ>NJ</option>
-<option value=NM>NM</option>
-<option value=NV>NV</option>
-<option value=NY>NY</option>
-<option value=OH>OH</option>
-<option value=OK>OK</option>
-<option value=OR>OR</option>
-<option value=PA>PA</option>
-<option value=SC>SC</option>
-<option value=TN>TN</option>
-<option value=TX>TX</option>
-<option value=UT>UT</option>
-<option value=VA>VA</option>
-<option value=WA>WA</option>
-<option value=WI>WI</option>
-<option value=WV>WV</option>
-<option value=WY>WY</option>
-<option value=WY>WY</option>
-</select>
-        <input type="submit" value="Submit">
-      </form>
-    </blockquote>
-    </div>
-
-    <div class="box">
-    <h3>I'm a federal candidate, how do I submit data to your site?</h3>
-    <blockquote>
-        You should fill out this <a href="https://forms.gle/5aNzx17mtqBcdH2E8" target="_blank">form</a> and email us at support@us.openubiproject.org if you have questions. 
-    </blockquote>
+    <div class="candidate-lookup">
+        <div class="card-header text-center">
+            <h3>U.S. Candidate Lookup</h3>
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">Find candidate UBI positions by state:</h5>
+        <blockquote>
+        <form action="./issues.cgi" method="get">
+        <div class="row">
+        <select class="form-control state-select" name="dist_key">
+            <option value=AK selected="selected">AK</option>
+            <option value=AR>AR</option>
+            <option value=AZ>AZ</option>
+            <option value=CA>CA</option>
+            <option value=CO>CO</option>
+            <option value=DE>DE</option>
+            <option value=FL>FL</option>
+            <option value=GA>GA</option>
+            <option value=HI>HI</option>
+            <option value=IA>IA</option>
+            <option value=ID>ID</option>
+            <option value=IL>IL</option>
+            <option value=IN>IN</option>
+            <option value=KS>KS</option>
+            <option value=KY>KY</option>
+            <option value=LA>LA</option>
+            <option value=MA>MA</option>
+            <option value=MD>MD</option>
+            <option value=ME>ME</option>
+            <option value=MI>MI</option>
+            <option value=MN>MN</option>
+            <option value=MO>MO</option>
+            <option value=MS>MS</option>
+            <option value=MT>MT</option>
+            <option value=NC>NC</option>
+            <option value=NE>NE</option>
+            <option value=NJ>NJ</option>
+            <option value=NM>NM</option>
+            <option value=NV>NV</option>
+            <option value=NY>NY</option>
+            <option value=OH>OH</option>
+            <option value=OK>OK</option>
+            <option value=OR>OR</option>
+            <option value=PA>PA</option>
+            <option value=SC>SC</option>
+            <option value=TN>TN</option>
+            <option value=TX>TX</option>
+            <option value=UT>UT</option>
+            <option value=VA>VA</option>
+            <option value=WA>WA</option>
+            <option value=WI>WI</option>
+            <option value=WV>WV</option>
+            <option value=WY>WY</option>
+            <option value=WY>WY</option>
+        </select>
+        <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+        </blockquote>
+        </div>
     </div>
 
-    <div class="box">
-    <h3>What is the best way to communicate with folks?</h3>
-    <blockquote>
-       You should join this <a href="https://discord.gg/bwzcggQ" target="_blank">Discord</a> server and follow the US channels!
-    </blockquote>
+    <div id="accordion">
+    <div class="faq card">
+        <div class="card-header text-center">
+            <h3>FAQ</h3>
+        </div>
+        <div class="card-body" id="federal-candidate">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#federal-candidate-collapse" aria-expanded="true" aria-controls="federal-candidate-collapse">
+                I'm a federal candidate, how do I submit data to your site?
+                </button>
+            </h5>
+        </div>
+        <div id="federal-candidate-collapse" class="collapse" aria-labelledby="federal-candidate" data-parent="#accordion">
+            <div class=card-body>
+                You should fill out this <a href="https://forms.gle/5aNzx17mtqBcdH2E8" target="_blank">form</a> and email us at support@us.openubiproject.org if you have questions.
+            </div>
+        </div>
+        <div class="card-body" id="communication">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#communication-collapse" aria-expanded="true" aria-controls="communication-collapse">
+                What is the best way to communicate with folks?
+                </button>
+            </h5>
+        </div>
+        <div id="communication-collapse" class="collapse" aria-labelledby="communication" data-parent="#accordion">
+            <div class=card-body>
+               You should join this <a href="https://discord.gg/bwzcggQ" target="_blank">Discord</a> server and follow the US channels!
+            </div>
+        </div>
+        <div class="card-body" id="creator">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#creator-collapse" aria-expanded="true" aria-controls="creator-collapse">
+                Where can I find the creator of this tool?
+                </button>
+            </h5>
+        </div>
+        <div id="creator-collapse" class="collapse" aria-labelledby="creator" data-parent="#accordion">
+            <div class=card-body>
+                You should join the OpenUBIProject <a href="https://discord.gg/n68wDna" target="_blank">Discord </a>and tag someone named "joezippy"... All suggestions and new ideas welcome! :)
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
 
-    <div class="box">
-    <h3>Where can I find the creator of this tool?</h3>
-    <blockquote>
-        You should join the OpenUBIProject <a href="https://discord.gg/n68wDna" target="_blank">Discord </a>and tag someone named "joezippy"... All suggestions and new ideas welcome! :)
-    </blockquote>
-    </div>
-    
-    <div class="thanks">
+    <div class="thanks footer">
     <h3>Special thanks to GiveDirect.io!</h3>
-    <blockquote>
+    <div class="">
         The GiveDirect <a href="http://givedirect.io/" target="_blank">Basic Income Project</a> is hosting these files for us. Please consider making a <a href="http://go.givedirect.io/" target="_blank">donation</a> to end extreme poverty today.
-    </blockquote>
     </div>
+    </div>
+</div>
 </body>
+
+<script src="./static/js/jquery-3.4.1.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>
+
 </html>
