@@ -111,6 +111,10 @@ blockquote {
   margin-right: 0.6em;
 }
 
+#nav-tabContent {
+  min-height: 10em;
+}
+
 /* FAQ */
 
 .faq {
