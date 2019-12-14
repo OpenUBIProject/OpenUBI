@@ -42,9 +42,8 @@
         <div class="card-body">
         <h5 class="card-title">Find candidate UBI positions by state:</h5>
         <blockquote>
-        <form action="./issues.cgi" method="get">
         <div class="row">
-        <select class="form-control state-select" name="dist_key">
+        <select class="form-control state-select" name="dist_key" onchange="queryCandidates(this.value)">
         <option value="AL" selected="selected">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
@@ -97,10 +96,33 @@
 	<option value="WI">Wisconsin</option>
 	<option value="WY">Wyoming</option>
         </select>
-        <input class="btn btn-primary" type="submit" value="Submit">
-        </form>
         </blockquote>
-        </div>
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-president-tab" data-toggle="tab" href="#nav-president" role="tab" aria-controls="nav-president" aria-selected="true">President</a>
+        <a class="nav-item nav-link" id="nav-house-tab" data-toggle="tab" href="#nav-house" role="tab" aria-controls="nav-house" aria-selected="false">House</a>
+        <a class="nav-item nav-link" id="nav-senate-tab" data-toggle="tab" href="#nav-senate" role="tab" aria-controls="nav-senate" aria-selected="false">Senate</a>
+      </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-president" role="tabpanel" aria-labelledby="nav-president-tab">
+          <table id="table-president">
+              <tbody></tbody>
+          </table>
+      </div>
+      <div class="tab-pane fade" id="nav-house" role="tabpanel" aria-labelledby="nav-house-tab">
+          <table id="table-house">
+              <tbody></tbody>
+          </table>
+      </div>
+      <div class="tab-pane fade" id="nav-senate" role="tabpanel" aria-labelledby="nav-senate-tab">
+          <table id="table-senate">
+              <tbody></tbody>
+          </table>
+      </div>
+    </div>
+    </div>
     </div>
 
     <div id="accordion">
@@ -159,5 +181,9 @@
 
 <script src="./static/js/jquery-3.4.1.min.js"></script>
 <script src="./static/js/bootstrap.min.js"></script>
+<script src="./static/js/candidate-query.js"></script>
+
+<!-- Query for first state result (Alabama) on page load -->
+<script>queryCandidates('AL')</script>
 
 </html>
