@@ -1,5 +1,5 @@
 async function getCandidateJSON(filename, stateKey) {
-  let response = await fetch(`/static/assets/${filename}.json`);
+  let response = await fetch(`./static/assets/${filename}.json`);
   let json = await response.json()
   if (filename === 'president') {
     return json;
@@ -27,7 +27,6 @@ function getCandidatePolicyStanceImage(stance) {
 };
 
 async function queryCandidates(stateKey) {
-  console.log(stateKey);
   let filenames = ['president', 'house', 'senate'];
 
   for (let filename of filenames) {
