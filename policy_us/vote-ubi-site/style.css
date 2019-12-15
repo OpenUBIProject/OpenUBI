@@ -129,6 +129,10 @@ blockquote {
   background-color: var(--grayLighter);
 }
 
+#voter-pledge {
+  border-bottom: 1px solid grey;
+}
+
 #federal-candidate {
   border-bottom: 1px solid grey;
 }
