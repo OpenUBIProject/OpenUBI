@@ -4,7 +4,7 @@ async function getCandidateJSON(filename, stateKey) {
   if (filename === 'president') {
     return json;
   } else {
-    return json.filter((candidate) => candidate['FEC - State'] === stateKey);
+    return json.filter((candidate) => candidate['Best DIST'].substring(0, 2) === stateKey);
   };
 };
 
@@ -27,6 +27,7 @@ function getCandidatePolicyStanceImage(stance) {
 };
 
 async function queryCandidates(stateKey) {
+  console.log(stateKey);
   let filenames = ['president', 'house', 'senate'];
 
   for (let filename of filenames) {
@@ -40,7 +41,9 @@ async function queryCandidates(stateKey) {
     };
 
     for (let candidate of candidatesJSON) {
+      let candidateDist = candidate['Best DIST'];
       let candidateName = candidate['Best Name'];
+      let candidateParty = candidate['Best Party'];
       let candidateTwitterUsername = candidate['Twitter'];
       let isUbiCaucusMember = getCandidatePolicyStanceImage(candidate['UBI']);
       let fifteenDollarMinimumWage = getCandidatePolicyStanceImage(candidate['15MIN']);
@@ -53,11 +56,18 @@ async function queryCandidates(stateKey) {
       `
         <tr>
           <th width="260px">
-            Candidate Name
+            ${candidateDist}
           </th>
           <th>
-            ${candidateName}
           </th>
+        </tr>
+        <tr>
+          <td width="260px">
+            Candidate
+          </td>
+          <td>
+            ${candidateName} - (${candidateParty})
+          </td>
         </tr>
         <tr>
           <td width="260px">
