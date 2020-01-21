@@ -45,6 +45,7 @@ async function queryCandidates(stateKey) {
       let candidateName = candidate['Best Name'];
       let candidateParty = candidate['Best Party'];
       let candidateTwitterUsername = candidate['Twitter'];
+      let candidateTwitterLink = candidate['TwitterLink'];
       let isUbiCaucusMember = getCandidatePolicyStanceImage(candidate['UBI']);
       let fifteenDollarMinimumWage = getCandidatePolicyStanceImage(candidate['15MIN']);
       let medicareForAll = getCandidatePolicyStanceImage(candidate['M4A']);
@@ -74,7 +75,7 @@ async function queryCandidates(stateKey) {
             Twitter Username
           </td>
           <td>
-            <a href="https://twitter.com/${candidateTwitterUsername}" target="_blank">
+            <a href="${candidateTwitterLink}" target="_blank">
               ${candidateTwitterUsername}
             </a>
           </td>
